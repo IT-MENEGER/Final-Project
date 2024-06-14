@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="../../img/Logatip.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar d-flex justify-between container">
+        <a href="#" class="navbar__logo">
+          <img src="../../img/navbar-logo.png" alt="CamelExport" />
+        </a>
+        <ul class="navbar__list d-flex justify-between">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../index.html">
+              <i class="fas fa-house"></i>Home
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../due diligence/index.html">
+              <i class="fas fa-rocket"></i>Services
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../portfolio/index.html">
+              <i class="fas fa-briefcase"></i>Portfolio
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./index.html"><i class="fas fa-wifi"></i>Blog</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">
+              <i class="fas fa-chart-column"></i>Company
+            </a>
+          </li>
+        </ul>
+        <div class="navbar__wrapper d-flex justify-between">
+          <div class="navbar__language d-flex">
+            <i class="fas fa-globe"></i>
+            <select name="" id="">
+              <option value="">En</option>
+              <option value="">Ru</option>
+              <option value="">Uz</option>
+            </select>
+          </div>
+          <div class="navbar__count d-flex align-items-center">
+            <i class="fas fa-cart-shopping"></i>
+            <p>0</p>
+          </div>
+          <a class="navbar__btn btn" href="#">Get in touch</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home">
+        <nav class="home__nav container">
+          <ul class="home__nav__list">
+            <li class="list-item">
+              <a class="list-item list-item--active" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="list-item">/</li>
+            <li class="list-item">
+              <a class="list-item list-item--active" href="./index.html"
+                >Company</a
+              >
+            </li>
+            <li class="list-item">/</li>
+            <li class="list-item">
+              <a class="list-item" href="./index.html">Our Blog</a>
+            </li>
+          </ul>
+          <a class="home-back" href="#">
+            <i class="fa-solid fa-angle-left"></i> Вернуться назад
+          </a>
+        </nav>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__wrapper justify-between d-flex">
+            <h1 class="blog-title">Наш блог</h1>
+            <label for="checkbox" class="btn home__btn">
+              <span>Категории</span>
+              <img src="./img/VectorHome__menubar.svg" alt="Filter" />
+            </label>
+          </div>
+          <div class="cards">
+            <input
+              class="category-input"
+              type="radio"
+              name="same"
+              id="material"
+              hidden
+              checked
+            />
+            <label class="card" for="material"
+              >Все <span>материалы</span></label
+            >
+            <input
+              class="category-input"
+              type="radio"
+              name="same"
+              id="investor"
+              hidden
+            />
+            <label class="card" for="investor"
+              ><span>Для</span> инвесторов</label
+            >
+            <input type="radio" name="same" id="startap" hidden />
+            <label class="card" for="startap"><span>Для</span> стартапов</label>
+          </div>
+        </div>
+        <div class="category">
+          <div class="container">
+            <div class="category__wrapper">
+              <input id="checkbox" type="checkbox" hidden />
+              <div class="category__types">
+                <div class="d-flex justify-between">
+                  <h1 class="category-title">Категории</h1>
+                  <label for="checkbox"
+                    ><i class="fa-solid fa-xmark"></i
+                  ></label>
+                </div>
+                <input id="type" type="checkbox" name="a" hidden />
+                <div id="card" class="card">
+                  <p class="card__header">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    Бизнес
+                    <label for="type"
+                      ><span>13</span> <i class="fa-solid fa-angle-down"></i
+                    ></label>
+                  </p>
+                  <p>Малый бизнес</p>
+                  <p>Средний бизнес</p>
+                  <p>Крупный бизнес</p>
+                </div>
+                <input id="type1" type="checkbox" name="a" hidden />
+                <div id="card1" class="card">
+                  <p class="card__header">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    Криптовалюта
+                    <label for="type1"
+                      ><span>13</span> <i class="fa-solid fa-angle-down"></i
+                    ></label>
+                  </p>
+                  <p>Инструменты</p>
+                  <p>Технологии</p>
+                </div>
+                <input id="type2" type="checkbox" name="a" hidden />
+                <div id="card1" class="card">
+                  <p class="card__header">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Обучение
+                    <label for="type2"
+                      ><span>13</span> <i class="fa-solid fa-angle-down"></i
+                    ></label>
+                  </p>
+                  <p>Сайты</p>
+                  <p>Онлайн бизнес</p>
+                </div>
+                <input id="type3" type="checkbox" name="a" hidden />
+                <div id="card1" class="card">
+                  <p class="card__header">
+                    <i class="fa-solid fa-gear"></i>
+                    Разработка
+                    <label for="type3"
+                      ><span>13</span> <i class="fa-solid fa-angle-down"></i
+                    ></label>
+                  </p>
+                  <p>Веб-сайты</p>
+                  <p>Мобильное приложение</p>
+                  <p>SaaS-сервисы</p>
+                  <p>Маркетплейсы</p>
+                  <p>Технологии</p>
+                </div>
+                <input id="type4" type="checkbox" name="a" hidden />
+                <div id="card1" class="card">
+                  <p class="card__header">
+                    <i class="fa-solid fa-file-audio"></i>
+                    Аудиты
+                    <label for="type4"
+                      ><span>13</span> <i class="fa-solid fa-angle-down"></i
+                    ></label>
+                  </p>
+                  <p>Бизнес аудиты</p>
+                  <p>Стартап аудиты</p>
+                </div>
+                <input id="type5" type="checkbox" name="a" hidden />
+                <div class="card">
+                  <p class="card__header">
+                    <i class="fa-solid fa-globe"></i>
+                    Страны
+                    <label for="type5"
+                      ><span>13</span> <i class="fa-solid fa-angle-down"></i
+                    ></label>
+                  </p>
+                  <p class="card-flag">
+                    <img class="flag" src="./img/flags/./USA.png" alt="USE" />
+                    <span>Сша</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/KANADA.png"
+                      alt="Канада "
+                    />
+                    <span>Канада</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/BRITANIYA.png"
+                      alt="Великобритания "
+                    />
+                    <span>Великобритания</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/Polsha.png"
+                      alt="Польша"
+                    />
+                    <span>Польша</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/Ispaniya.png"
+                      alt="Испания"
+                    />
+                    <span>Испания</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/Vengriya.png"
+                      alt="Венгрия"
+                    />
+                    <span>Венгрия</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/Slovakiya.png"
+                      alt="Словакия"
+                    />
+                    <span>Словакия</span>
+                  </p>
+                  <p class="card-flag">
+                    <img
+                      class="flag"
+                      src="./img/flags/Chehiya.png"
+                      alt="Чехия"
+                    />
+                    <span>Чехия</span>
+                  </p>
+                </div>
+                <div class="card__img">
+                  <img src="./img/Blog-Universe.png" alt="Our team" />
+                </div>
+              </div>
+              <div class="category__cards">
+                <input id="tooltip" type="checkbox" hidden />
+                <button class="category-btn">
+                  <label for="tooltip">
+                    Сортировать
+                    <i id="angle" class="fa-solid fa-angle-down"></i>
+                  </label>
+                  <div class="category-btn__tooltip">
+                    <p>Сначала новые</p>
+                    <hr />
+                    <p>Сначала популярные</p>
+                  </div>
+                </button>
+
+                <div class="category__detail">
+                  <img
+                    class="cate"
+                    src="./img/Blog-house.png"
+                    alt="Universe"
+                    width="100%"
+                  />
+                  <h4 class="category__card-title">
+                    Fitch снизило долгосрочный рейтинг Белоруссии до
+                    «ограниченного дефолта»
+                  </h4>
+                  <p class="category__card-text">
+                    Рейтинг понизили c C («дефолт неизбежен») до RD
+                    («ограниченный дефолт»), или дефолт по отдельным
+                  </p>
+                  <div class="category__card__footer">
+                    <span><i class="fa-solid fa-eye"></i> 326 </span>
+                    <span
+                      ><i class="fa-solid fa-calendar-days"></i> Сегодня,
+                      12:43</span
+                    >
+                    <button class="btn">
+                      <i class="fa-regular fa-share-from-square"></i> поделиться
+                    </button>
+                  </div>
+                </div>
+                <div class="category__detail">
+                  <img
+                    class="cate"
+                    src="./img/Blog-house.png"
+                    alt="Universe"
+                    width="100%"
+                  />
+                  <h4 class="category__card-title">
+                    Fitch снизило долгосрочный рейтинг Белоруссии до
+                    «ограниченного дефолта»
+                  </h4>
+                  <p class="category__card-text">
+                    Рейтинг понизили c C («дефолт неизбежен») до RD
+                    («ограниченный дефолт»), или дефолт по отдельным
+                  </p>
+                  <div class="category__card__footer">
+                    <span><i class="fa-solid fa-eye"></i> 326 </span>
+                    <span
+                      ><i class="fa-solid fa-calendar-days"></i> Сегодня,
+                      12:43</span
+                    >
+                    <button class="btn">
+                      <i class="fa-regular fa-share-from-square"></i> поделиться
+                    </button>
+                  </div>
+                </div>
+                <div class="category__detail">
+                  <img
+                    class="cate"
+                    src="./img/Blog-house.png"
+                    alt="Universe"
+                    width="100%"
+                  />
+                  <h4 class="category__card-title">
+                    Fitch снизило долгосрочный рейтинг Белоруссии до
+                    «ограниченного дефолта»
+                  </h4>
+                  <p class="category__card-text">
+                    Рейтинг понизили c C («дефолт неизбежен») до RD
+                    («ограниченный дефолт»), или дефолт по отдельным
+                  </p>
+                  <div class="category__card__footer">
+                    <span><i class="fa-solid fa-eye"></i> 326 </span>
+                    <span
+                      ><i class="fa-solid fa-calendar-days"></i> Сегодня,
+                      12:43</span
+                    >
+                    <button class="btn">
+                      <i class="fa-regular fa-share-from-square"></i> поделиться
+                    </button>
+                  </div>
+                </div>
+                <div class="detail__img"  width="100%">
+                  <img src="./img/Blog-Universe.png" alt="Universe">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="problems"> 
+        <div class="container"> 
+          <h1 class="problems__title"> 
+            What problems <br /> 
+            are we solving 
+          </h1> 
+          <div class="problems__wrapper"> 
+            <div class="d-flex justify-between"> 
+              <h2>IT & DEVELOPMENT</h2> 
+              <h2>MARKETING</h2> 
+              <h2>STARTUB</h2> 
+            </div> 
+            <div class="cards"> 
+              <div class="card"> 
+                <div class="d-flex align-items-center"> 
+                  <i 
+                    class="problems__title-icons fa-solid fa-chart-column" 
+                    style="display: inline-block" 
+                  ></i> 
+                  <p class="card__title"> 
+                    Digital <br /> 
+                    strategy 
+                  </p> 
+                </div> 
+                <div class="d-flex"> 
+                  <p class="problems__card__for">For who?</p> 
+                  <p class="problems__card__for">For when?</p> 
+                </div> 
+                <hr /> 
+                <p class="problems__card__items"> 
+                  <i class="fa-solid fa-rocket"></i> Start-up companiesand 
+                  startups 
+                </p> 
+                <p class="problems__card__items"> 
+                  <i class="fas fa-mobile-alt"></i> 
+                  Small and medium-sized businesses 
+                </p> 
+                <p class="problems__card__items"> 
+                  <i class="fas fa-money-bill-alt"></i> 
+                  Fast-growing business 
+                </p> 
+                <p class="problems__card__items"> 
+                  <i class="fas fa-money-bill-alt"></i> 
+                  Large companiesand top brands 
+                </p> 
+                <button class="btn"> 
+                  Get Started <i class="fas fa-arrow-right"></i> 
+                </button> 
+              </div> 
+              <div class="card text-center"> 
+                <i class="problems__title-icons fas fa-bullhorn"></i> 
+                <div> 
+                  <h2 class="card__title text-center">Advertising and SMM</h2> 
+                  <p class="card__text"> 
+                    We will develop a step-by-step algorithm. 
+                  </p> 
+                </div> 
+ 
+                <div class="checkbox"> 
+                  <i class="fas fa-arrow-right"></i> 
+                </div> 
+              </div> 
+              <div class="card text-center"> 
+                <i 
+                  class="problems__title-icons fas fa-assistive-listening-systems" 
+                > 
+                </i> 
+                <div> 
+                  <h2 class="card__title text-center">Landing Page</h2> 
+                  <p class="card__text">We will develop a step-by-step algorithm. 
+                  </p> 
+                </div> 
+ 
+                <div class="checkbox"> 
+                  <i class="fas fa-arrow-right"></i> 
+                </div> 
+              </div> 
+              <div class="card text-center"> 
+                <i class="problems__title-icons fas fa-swatchbook"></i> 
+                <div> 
+                  <h2 class="card__title text-center">Branding and identity</h2> 
+                  <p class="card__text"> 
+                    We will develop a step-by-step algorithm. 
+                  </p> 
+                </div> 
+                <div class="checkbox"> 
+                  <i class="fas fa-arrow-right"></i> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </section>  -->
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__wrapper__lists">
+            <li><b class="footer__wrapper__title">Services</b></li>
+            <li>
+              <a href="#" class="footer__wrapper-link"
+                ><i class="fa-solid fa-chart-column"></i>Planning & Strategy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="footer__wrapper-link">IT & development</a>
+            </li>
+            <li><a href="#" class="footer__wrapper-link">Marketing</a></li>
+            <li><a href="#" class="footer__wrapper-link">Startups</a></li>
+          </ul>
+          <ul class="footer__wrapper__lists">
+            <li><b class="footer__wrapper__title">Company</b></li>
+            <li><a href="#" class="footer__wrapper-link">About us</a></li>
+            <li><a href="#" class="footer__wrapper-link">Potfolio</a></li>
+            <li><a href="#" class="footer__wrapper-link">Vacancies</a></li>
+            <li><a href="#" class="footer__wrapper-link">Blog</a></li>
+          </ul>
+          <ul class="footer__wrapper__lists">
+            <li><b class="footer__wrapper__title">Enterprise</b></li>
+            <li>
+              <a href="#" class="footer__wrapper-link">Ready businesses</a>
+            </li>
+            <li><a href="#" class="footer__wrapper-link">Startups</a></li>
+            <li><a href="#" class="footer__wrapper-link">Real estate</a></li>
+            <li><a href="#" class="footer__wrapper-link">Companies</a></li>
+          </ul>
+          <div class="footer__contact">
+            <img
+              class="footer__logo"
+              src="../../img/footer-logo.png"
+              alt="Logo"
+            />
+            <p class="footer__call">
+              hi@upsilonit.com <br /><br />
+              +1 (650) 995-5553
+            </p>
+            <div class="footer__brands">
+              <a class="footer__icon" href="#"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="footer__icon" href="#"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a class="footer__icon" href="#"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="footer__icon" href="#"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a class="footer__icon" href="#"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__inner">
+        <div class="container d-flex justify-between flex-wrap  ">
+          <p >© 2023 Upsilon LLC. All Rights Reserved</p>
+          <ul class="footer__inner__list d-flex">
+            <li><a class="footer__list-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer__list-link" href="#">Terms of Service</a></li>
+            <li><a class="footer__list-link" href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
